@@ -1,31 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    background-color: rgb(158, 218, 218);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+.gates {
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.gate {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #3498db;
+    color: white;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.circuit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qubit {
+    width: 50px;
+    padding: 10px;
+    border: 1px solid black;
     text-align: center;
 }
 
-#circuitCanvas {
-    width: 100%;
-    height: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    margin: 20px 0;
-}
-
-button {
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#results {
-    margin-top: 20px;
+.drop-zone {
+    width: 80px;
+    height: 50px;
+    border: 2px dashed gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
